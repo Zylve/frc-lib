@@ -1,3 +1,5 @@
 # frc-lib
 Simple libraries for frc.
-Installation should just be a matter of putting these files in src/main/java/frc/lib/.
+
+To add to your project you do the `git submodule add --force --branch main https://github.com/Zylve/frc-lib/ .\src\main\java\frc\lib\zylve`
+To pull the latest changes do `git submodule update --remote .\src\main\java\frc\lib\zylve`
