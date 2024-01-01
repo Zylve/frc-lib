@@ -7,7 +7,9 @@ import edu.wpi.first.wpilibj2.command.button.Trigger;
 
 /**
  * Joystick wrapper because ~~it was pissing me off~~ we need a cleaner RobotContainer.
- * <p>The methods in this class return triggers. To get boolean values, use {@link Trigger#getAsBoolean()} </p>
+ * <p>
+ * The methods in this class return triggers. To get boolean values, use {@link Trigger#getAsBoolean()}
+ * </p>
  */
 public class Controller {
     private final Joystick joystick;
@@ -53,7 +55,7 @@ public class Controller {
 
         leftTrigger = new Trigger(() -> joystick.getRawAxis(XboxController.Axis.kLeftTrigger.value) > 0.5);
         rightTrigger = new Trigger(() -> joystick.getRawAxis(XboxController.Axis.kRightTrigger.value) > 0.5);
-        
+
         a = new JoystickButton(joystick, XboxController.Button.kA.value);
         b = new JoystickButton(joystick, XboxController.Button.kB.value);
         x = new JoystickButton(joystick, XboxController.Button.kX.value);
@@ -77,15 +79,15 @@ public class Controller {
     public double getLeftX() {
         return joystick.getRawAxis(XboxController.Axis.kLeftX.value);
     }
-    
+
     public double getLeftY() {
         return joystick.getRawAxis(XboxController.Axis.kLeftY.value);
     }
-    
+
     public double getRightX() {
         return joystick.getRawAxis(XboxController.Axis.kRightX.value);
     }
-    
+
     public double getRightY() {
         return joystick.getRawAxis(XboxController.Axis.kRightY.value);
     }
@@ -153,27 +155,27 @@ public class Controller {
     public Trigger getDown() {
         return down;
     }
-    
+
     public Trigger getLeft() {
         return left;
     }
-    
+
     public Trigger getRight() {
         return right;
     }
-    
+
     public Trigger getUpLeft() {
         return upLeft;
     }
-    
+
     public Trigger getUpRight() {
         return upRight;
     }
-    
+
     public Trigger getDownLeft() {
         return downLeft;
     }
-    
+
     public Trigger getDownRight() {
         return downRight;
     }
